@@ -16,14 +16,18 @@ This project documents the **installation of a LAMP stack and WordPress** on Cen
 ### Step 1: Download WordPress
 
 wget https://wordpress.org/latest.zip
+
 yum install zip
-unzip latest.zip
+
+unzip latest.zip && yum install zip && unzip latest.zip
 
 
 ### Step 2: Install PHP & Required Modules
 
 yum install php
+
 yum install php-mysqlnd.x86_64
+
 yum install php-json
 
 
@@ -44,8 +48,11 @@ mysql -u root -p
 Inside MariaDB:
 
 SHOW DATABASES;
+
 GRANT ALL ON wordpressdb.\* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'wordpresspassword';
+
 FLUSH PRIVILEGES;
+
 EXIT;
 
 
@@ -54,8 +61,11 @@ EXIT;
 Edit the `wp-config.php` file:
 
 define('DB\_NAME', 'wordpressdb');
+
 define('DB\_USER', 'wordpressuser');
+
 define('DB\_PASSWORD', 'wordpresspassword');
+
 define('DB\_HOST', 'localhost');
 
 
@@ -84,7 +94,9 @@ Screenshots for each step are located in the `screenshots/` folder.
 * If SELinux or firewalld blocks access, adjust them accordingly.
 
 * Copy WordPress files to:
+  
   cp -r wordpress/\* /var/www/html/
+  
   chown -R apache\:apache /var/www/html
 
 
