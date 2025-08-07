@@ -78,9 +78,9 @@ In the browser, go to:
 Fill in the WordPress setup form to complete installation.
 
 
-## 📷 Screenshots
+## 📷 Wordpress Website
 
-Screenshots for each step are located in the `screenshots/` folder.
+![](Screenshots/11-wordpress-website.png)
 
 
 ## 🧾 Notes
@@ -103,4 +103,5 @@ Screenshots for each step are located in the `screenshots/` folder.
 ## ✅ Status
 
 Successfully set up a LAMP stack and deployed WordPress on CentOS.
+
 
