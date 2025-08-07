@@ -47,13 +47,13 @@ mysql -u root -p
 
 Inside MariaDB:
 
-SHOW DATABASES;
+show databases;
 
-GRANT ALL ON wordpressdb.\* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'wordpresspassword';
+grant all on wordpressdb.\* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'wordpresspassword';
 
-FLUSH PRIVILEGES;
+flush privileges;
 
-EXIT;
+exit;
 
 
 ### Step 5: Configure wp-config.php
